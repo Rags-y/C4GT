@@ -1,0 +1,168 @@
+name: DMP 2025 Project Template
+description: Propose a meaningful project for the Dedicated Mentoring Program (DMP) 2025
+title: "[DMP 2025]: <Enter concise project title>"
+labels: ["DMP 2025", "High Impact", "Needs Review"]
+body:
+  - type: textarea
+    id: ticket-description
+    validations:
+      required: true
+    attributes:
+      label: Description
+      description: Describe the core problem you're solving. Include context, potential impact, and user personas.
+      value: |
+        ## Description
+        This project aims to improve access to digital healthcare for low-income families using a lightweight mobile-first interface. The current healthcare access is limited for this group due to poor internet connectivity and lack of easy-to-use tools. By focusing on design and mobile optimization, we plan to bridge this gap effectively.
+
+  - type: textarea
+    id: ticket-goals
+    validations:
+      required: true
+    attributes:
+      label: Goals & Mid-Point Milestone
+      description: Set 3–5 clear goals and what will be done by the 1.5-month check-in.
+      value: |
+        ## Goals
+        - [ ] Improve feature discoverability via better UX
+        - [ ] Implement end-to-end data validation
+        - [ ] Reduce load time by 30%
+        - [ ] Add inclusive language support
+        - [ ] Mid-Point Milestone: MVP wireframes, working prototype
+
+  - type: textarea
+    id: ticket-setup
+    attributes:
+      label: Setup/Installation
+      description: Briefly outline how to get started or link to existing setup docs.
+      value: |
+        1. Fork the repo
+        2. Run `npm install`
+        3. Start dev server with `npm run dev`
+
+  - type: textarea
+    id: ticket-expected-outcome
+    attributes:
+      label: Expected Outcome
+      description: What will success look like? Mention key outputs and benefits to users.
+      value: |
+        - A fully working and tested feature
+        - Documentation for maintainers
+        - User feedback collected post-launch
+
+  - type: textarea
+    id: ticket-acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define clear, measurable outcomes to mark this ticket as done.
+      value: |
+        - [ ] 90% test coverage
+        - [ ] All acceptance tests pass
+        - [ ] Reviewed by at least 1 mentor
+
+  - type: textarea
+    id: ticket-implementation-details
+    validations:
+      required: true
+    attributes:
+      label: Implementation Details
+      description: Add tech stack, libraries, and expected architecture/approach.
+      value: |
+        - Tech: React, Node.js, MongoDB
+        - Libraries: Tailwind, React Router
+        - API design via Swagger
+
+  - type: textarea
+    id: ticket-mockups
+    attributes:
+      label: Mockups/Wireframes
+      description: Paste Figma or image links (if available)
+      value: |
+        [Paste here or say "To be designed in Phase 1"]
+
+  - type: input
+    id: ticket-product
+    attributes:
+      label: Product Name
+      placeholder: e.g., HealthBridge
+
+  - type: dropdown
+    id: ticket-organisation
+    attributes:
+      label: Organisation Name
+      multiple: false
+      options:
+        - Bandhu
+        - Belongg
+        - Blockster Global (CREDBEL)
+        - Civis
+        - Dhwani
+        - EGov
+        - Tech4Dev
+        - Ushahidi
+        - ... [rest same]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ticket-governance-domain
+    attributes:
+      label: Domain
+      options:
+        - Healthcare
+        - Education
+        - Financial Inclusion
+        - Livelihoods
+        - Skilling
+        - Learning & Development
+        - Agriculture
+        - Service Delivery
+        - Open Source Library
+        - Water
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ticket-technical-skills-required
+    attributes:
+      label: Tech Skills Needed
+      multiple: true
+      options:
+        - React
+        - Python
+        - RESTful APIs
+        - Docker
+        - Machine Learning
+        - Tailwind CSS
+        - SQL
+        - Security
+        - UI/UX/Design
+        - [other options unchanged]
+    validations:
+      required: true
+
+  - type: textarea
+    id: ticket-mentors
+    attributes:
+      label: Mentor(s)
+      description: Tag relevant mentors or list preferred areas of guidance.
+      value: |
+        - @mentor1 (UX)
+        - @mentor2 (API + backend)
+
+  - type: dropdown
+    id: ticket-category
+    attributes:
+      label: Category
+      multiple: true
+      options:
+        - Frontend
+        - Backend
+        - Accessibility
+        - Performance Improvement
+        - Research
+        - Security
+        - AI
+        - Documentation
+        - Other
+    validations:
+      required: true
