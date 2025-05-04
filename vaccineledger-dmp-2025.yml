@@ -12,7 +12,7 @@ body:
       description: Describe the core problem you're solving. Include context, potential impact, and user personas.
       value: |
         ## Description
-        [e.g., This project aims to improve access to digital healthcare for low-income families using a lightweight mobile-first interface.]
+        This project aims to improve access to digital healthcare for low-income families using a lightweight mobile-first interface. The current healthcare access is limited for this group due to poor internet connectivity and lack of easy-to-use tools. By focusing on design and mobile optimization, we plan to bridge this gap effectively.
 
   - type: textarea
     id: ticket-goals
